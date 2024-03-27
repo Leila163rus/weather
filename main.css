@@ -1,0 +1,77 @@
+
+.weather {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    padding: 65px;
+    image-orientation: inherit;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('Фото/Зима.jpg');
+    background-size: cover;
+    transform: translate(25%, 15%);
+    border-radius: 20px;
+    box-shadow: 25px 25px 40px 0 rgba(0, 0, 0, 0.33);
+    color: white;
+}
+
+.col {
+    display: inline-block;
+    margin-top: 45px;
+}
+
+.town {
+    font-size: 350%;
+    font-weight: bold;
+
+}
+
+.date {
+    font-size: 250%;
+    font-style: oblique;
+    margin-top: 40px;
+}
+
+img {
+    margin-top: 45px;
+    filter: invert(1);
+}
+
+.rain {
+    margin-top: -100px;
+    margin-left: 160px;
+    font-weight: 600;
+    font-size: 150%;
+}
+
+.tempreture {
+    margin-left: 300px;
+    font-size: 550%;
+    font-weight: 800;
+}
+
+.tempreture1 {
+    margin-left: 250px;
+    margin-top: 20px;
+    font-size: 130%;
+}
+
+.wind {
+    margin-left: 290px;
+    margin-top: 45px;
+}
+
+.humidity {
+    margin-left: 300px;
+    margin-top: 45px;
+}
+
+.clouds {
+    margin-left: 300px;
+}
+
+
+
+
+
+
+
+
