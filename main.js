@@ -32,13 +32,11 @@ function getCurrentWeather() {
         let longitude = position.coords.longitude;
         let latitude = position.coords.latitude;
         let base = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&lang=ru&appid=${apiKey}&units=metric`;
-        console.log(base);
 
         await getWeather();
         async function getWeather() {
           const response = await fetch(base);
           const data = await response.json();
-          console.log(data);
 
           town.innerHTML = data.name;
           nowTemp.innerHTML = `${Math.round(data.main.temp)}&#8451`;
@@ -60,7 +58,6 @@ function getCurrentWeather() {
             let temp = +data.main.temp;
             let descr = String(data.weather[0].description);
             let gradient = `linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4))`;
-            console.log(month1, temp, descr, gradient);
             if ((descr == 'cнег') || (descr == 'небольшой cнег')) {
               weather.style.backgroundImage = `${gradient}, url('Фото/Снег.jpg')`;
             } else if ((descr == 'дождь') || (descr == 'небольшой дождь')) {
