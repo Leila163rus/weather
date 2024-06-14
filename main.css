@@ -1,17 +1,17 @@
 
 .weather {
-    display: flex;
-    width: 900px;
-    height: 500px;
-    padding: 57px;
-    margin: 25px;
-    image-orientation: inherit;
     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('Фото/Зима.jpg');
     background-size: cover;
-    transform: translate(25%, 15%);
     border-radius: 20px;
     box-shadow: 25px 25px 40px 0 rgba(0, 0, 0, 0.33);
     color: white;
+    display: flex;
+    image-orientation: inherit;
+    margin: 25px;
+    padding: 57px;
+    transform: translate(25%, 15%);
+    width: 900px;
+    height: 500px;
 }
 
 .col1 {
@@ -20,9 +20,9 @@
 
 .col2 {
     float: right;
-    width: 100%;
     margin-top: 45px;
     text-align: right;
+    width: 100%;
 }
 
 .town {
@@ -37,13 +37,13 @@
 }
 
 img {
-    margin-top: 27px;
     filter: invert(1);
+    margin-top: 27px;
 }
 
 .rain {
-    margin-top: -120px;
     margin-left: 160px;
+    margin-top: -120px;
     font-weight: 600;
     font-size: 150%;
 }
