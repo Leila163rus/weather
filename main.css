@@ -1,78 +1,73 @@
-
 .weather {
-    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('Фото/Зима.jpg');
-    background-size: cover;
-    border-radius: 20px;
-    box-shadow: 25px 25px 40px 0 rgba(0, 0, 0, 0.33);
-    color: white;
-    display: flex;
-    image-orientation: inherit;
-    margin: 25px;
-    padding: 57px;
-    transform: translate(25%, 15%);
-    width: 900px;
-    height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('Фото/Зима.jpg');
+  background-size:auto;   
+  border-radius: 20px;
+  box-shadow: 25px 25px 40px 0 rgba(0, 0, 0, 0.33);
+  color: white;
+  image-orientation: inherit;
+  margin: 25px;
+  padding: 50px;
+  transform: translate(25%, 15%);
+  width: 900px;
+  height: 500px;
 }
 
 .col1 {
-    margin-top: 45px;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 
 .col2 {
-    float: right;
-    margin-top: 45px;
-    text-align: right;
-    width: 100%;
+  float: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: right;
+  width: 100%;
 }
 
 .town {
-    font-size: 350%;
-    font-weight: bold;
+  font-size: 350%;
+  font-weight: bold;
 }
 
 .date {
-    font-size: 250%;
-    font-style: oblique;
-    margin-top: 40px;
+  font-size: 235%;
+  font-style: oblique;
+  margin-top: 30px;
 }
 
 img {
-    filter: invert(1);
-    margin-top: 27px;
+  filter: invert(1);
+  margin-top: 27px;
 }
 
 .rain {
-    margin-left: 160px;
-    margin-top: -120px;
-    font-weight: 600;
-    font-size: 150%;
+  margin-left: 50%;
+  margin-top: -120px;
+  font-size: 150%;
+  font-weight: 600;
 }
 
 .tempreture {
-    font-size: 550%;
-    font-weight: 800;
+  font-size: 550%;
+  font-weight: 800;
 }
 
 .tempreture1 {
-    font-size: 130%;
+  font-size: 130%;
 }
 
 .wind {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 
 .humidity {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .clouds {
-  margin-top: 60px;
+  margin-top: 50px;
 }
-
-
-
-
-
-
-
-
