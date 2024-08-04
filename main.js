@@ -31,7 +31,7 @@ function getCurrentWeather() {
       navigator.geolocation.getCurrentPosition(async (position) => {
         let longitude = position.coords.longitude;
         let latitude = position.coords.latitude;
-        let base = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&lang=ru&appid=${apiKey}&units=metric`;
+        let base = `https://ru.api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&lang=ru&appid=${apiKey}&units=metric`;
 
         await getWeather();
         async function getWeather() {
