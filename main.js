@@ -15,9 +15,9 @@ const clouds = document.querySelector('.clouds');
 
 getCurrentDate();
 function getCurrentDate() {
-  const months = ['Декабря', 'Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября'];
+  const months = ['Января', 'Февраля', 'Марта', 'Апреля', 'Мая', 'Июня', 'Июля', 'Августа', 'Сентября', 'Октября', 'Ноября', 'Декабря'];
   let newData = new Date();
-  let month = newData.getMonth() + 1;
+  let month = newData.getMonth();
   let day = newData.getDate();
   let year = newData.getFullYear();
   date.textContent = `${day.toString()} ${months[month].toString()} ${year.toString()} г.`;
@@ -31,7 +31,8 @@ function getCurrentWeather() {
       navigator.geolocation.getCurrentPosition(async (position) => {
         let longitude = position.coords.longitude;
         let latitude = position.coords.latitude;
-        let base = `https://ru.api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&lang=ru&appid=${apiKey}&units=metric`;
+        //let base = `https://ru.api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&lang=ru&appid=${apiKey}&units=metric`;
+        let base = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&lang=ru&appid=${apiKey}&units=metric`;
 
         await getWeather();
         async function getWeather() {
